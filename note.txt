@@ -1,1 +1,6 @@
 await puppeteer.launch({ headless: false });      //Không chạy ngầm
+
+
+git clean -fxd
+
+Như các bạn thấy đấy, dùng puppeteer để cào dữ liệu có thể cào luôn được cả AJAX và các trang chứa JavaScript, rất tiện lợi.

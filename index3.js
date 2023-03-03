@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 const download = require("image-downloader");
 const linkPage =
-  "https://kenh14.vn/ai-roi-cung-khac-cac-hot-girl-nay-cung-khong-ngoai-le-khi-vong-1-cu-ngay-cang-phong-phao-20171207193958533.chn";
+  "https://www.leagueoflegends.com/vi-vn/news/game-updates/patch-12-22-notes/";
 (async () => {
   const browser = await puppeteer.launch();
   console.log("Browser openned");
@@ -11,9 +11,7 @@ const linkPage =
   console.log("Page loaded");
 
   const imgLinks = await page.evaluate(() => {
-    let imgElements = document.querySelectorAll(
-      ".sp-img-zoom > img, .sp-img-lightbox > img, .detail-img-lightbox > img"
-    );
+    let imgElements = document.querySelectorAll("a.skins.cboxElement > img");
     imgElements = [...imgElements];
     let imgLinks = imgElements.map((i) => i.getAttribute("src"));
     return imgLinks;
@@ -25,7 +23,7 @@ const linkPage =
     imgLinks.map((imgUrl) =>
       download.image({
         url: imgUrl,
-        dest: __dirname,
+        dest: __dirname + "/Image/CapNhatLol",
       })
     )
   );
