@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "image-downloader": "^4.3.0",
-    "puppeteer": "^19.7.2"
+    "puppeteer": "^19.7.2",
+    "xlsx": "^0.18.5"
   }
 }
