@@ -7,3 +7,15 @@ Như các bạn thấy đấy, dùng puppeteer để cào dữ liệu có thể 
 
 
 let imgElements = document.querySelectorAll("a.skins.cboxElement > img");
+
+
+
+JSPath nha ============================
+
+  await page.waitForSelector(
+    "#ctl00_ContentPlaceHolder1_ctl00_ucDangNhap_txtTaiKhoa"
+  );
+  await page.type(
+    "#ctl00_ContentPlaceHolder1_ctl00_ucDangNhap_txtTaiKhoa",
+    `1911062419`
+  );
