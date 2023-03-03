@@ -19,3 +19,5 @@ JSPath nha ============================
     "#ctl00_ContentPlaceHolder1_ctl00_ucDangNhap_txtTaiKhoa",
     `1911062419`
   );
+
+   imgElements = Array.from(tempimgElements).slice(0, 10);
