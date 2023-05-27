@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "blob": "^0.1.0",
     "image-downloader": "^4.3.0",
     "puppeteer": "^19.7.2",
     "xlsx": "^0.18.5"
